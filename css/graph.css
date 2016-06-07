@@ -1,0 +1,69 @@
+html,body
+{
+  height:100%;
+}
+
+/* graph */ 
+
+.vertical-line
+{
+  border-left:1px solid black;
+  width: 1px;
+  height: 100%; 
+  margin-left: 50%;
+  height: 40px; 
+}
+
+.grand-titre-debat h3
+{
+  width:100%; 
+  text-align:center; 
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 0; 
+  color:white;
+  background-color: #616061;  
+}
+    
+.titre-debat
+{  
+    text-align: center; 
+    border-radius: 5px; 
+    color:white;
+    height:100px;	
+    padding:15px;
+    line-height:30px;
+    cursor: pointer;
+}
+
+.titre-debat-societe
+{
+  background-color: #2469CE; 
+}
+
+.titre-debat-travail
+{
+  background-color: #3B9D2B; 
+}
+
+.titre-debat-montant
+{
+  background-color: #D9B929; 
+}
+
+.titre-debat-financement
+{
+  background-color: #DE6B25; 
+} 
+ 
+
+.detail-arrow-up
+{
+  width:30px; 
+  position: relative;
+  left: 50%;
+  margin-left: -15px;
+  cursor:pointer;
+}
+
+ /* texte */ 

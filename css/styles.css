@@ -1,0 +1,53 @@
+
+h2, h3
+{
+	font-size:20px;
+}
+
+/* Customisation CSS */
+/* vert : #8BC5BF ; jaune #E7B44C*/
+
+.navbar-default .navbar-brand {
+	/*color: #8BC5BF ;*/
+	color:#AAAAAA;
+}
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus,
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+	/*color: #8BC5BF ;*/
+	color:white;
+}
+
+.navbar-fixed-top{
+	margin: auto;
+	margin-top:10px;
+	width: 80%;
+	border-radius: 4px;
+}
+
+body{
+	padding-top: 40px; 
+	/*background-color: #1e1f20;
+	color: #8BC5BF ; */
+	font-family: "Georgia";
+}
+
+.page-header {
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.step {
+	margin-top: 40px;
+}
+ 
+footer {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+h1, h2
+{
+	width 100%;
+	text-align:center;
+}
