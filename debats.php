@@ -111,7 +111,7 @@
 
               echo 'onclick="show_part(\''.$line[1]."','".$line[$i+2]."');\"";
 
-               ?> > <?php echo $line[$i]; ?> </div>
+               ?> > <span><?php echo $line[$i]; ?></span> </div>
               </div>
 
                 <?php

@@ -27,13 +27,20 @@ html,body
     
 .titre-debat
 {  
-    text-align: center; 
+    /*text-align: center; */
     border-radius: 5px; 
     color:white;
     height:100px;	
     padding:15px;
-    line-height:30px;
+    /*line-height:30px;*/
     cursor: pointer;
+}
+
+.titre-debat span
+{
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
 }
 
 .titre-debat-societe
