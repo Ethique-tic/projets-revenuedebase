@@ -41,7 +41,7 @@ de disparition, du fait de la numérisation de l’économie selon le cabinet Ro
 s’appuie sur une étude de l’Université d’Oxford de 2013<sup><a href="#note">1</a></sup> . C’est dans ce contexte qu’est
 apparue une proposition nouvelle et surprenante, expérimentée dans certains pays tels
 que le Canada ou encore l’Inde, et déjà même adoptée par la Finlande pour 2017: le
-revenu de base. Le principe est simple, nombreux articles le qualifient même de simplisme
+revenu de base. Le principe est simple, nombreux articles le qualifient même de simpliste
 puisqu’il consiste à donner à chaque citoyen une somme fixe tous les mois,
 inconditionnellement de sa situation professionnelle ou de ses revenus, la seule distinction
 étant que les mineurs touchent moins que les adultes.
