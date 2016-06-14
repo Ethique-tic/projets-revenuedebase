@@ -1,5 +1,3 @@
-
-
 function hide_all() {
 	$(".graph-page").hide(); 
 } 

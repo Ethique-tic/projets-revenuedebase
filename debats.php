@@ -33,23 +33,23 @@
  
 
 	<section class="col-xs-12" style="text-align:justify;">
-	<h3>  Qu’est-ce qu’une controverse ? </h3>
+	<h2>  Qu’est-ce qu’une controverse ? </h2>
 
    <p>Une controverse est une discussion argumentée, engendrée par l'expression d'une différence d'opinion ou d'une critique quant à un problème, un phénomène ou un état de choses. Tommaso Venturini affirme qu’une controverse est en fait une « incertitude partagée ». En d’autres termes, la seule certitude dont l’on dispose, quand on étudie une controverse, c’est qu’il existe, sur un sujet donné, un désaccord et des positions souvent irréconciliables. Ce qu’il importe en conséquence d’étudier et de chercher à préciser, c’est la manière dont les acteurs interagissent et s’opposent pour construire cette incertitude fondamentale et la polémique qui en découle.</p>
 
-   <p> C’est pourquoi l’étude d’une controverse est un travail empirique, qui s’appuie sur des faits actuels ou passé, et principalement un travail de recherche. Dans le cadre de la controverse du revenu de base, il a fallu dans un premier temps relever tous les médias, sites web etc. participant au débat, c’était là le rôle du journaliste de l’équipe. Il a ensuite fallu distinguer tous les acteurs et les différentes positions prises dans le débat, pour ensuite tenter d’identifier les liens qui existaient entre ces derniers. Mais l’étude d’une controverse ne s’arrête pas, c’est tout l’aspect juridique de la question qui a été traité par l’un des membres de l’équipe. </p>
+   <p> Dans le cadre de la controverse du revenu de base, il a fallu dans un premier temps collecter le plus grand nombre d'articles de journal ou de blog, qui prenaient partie au débat : cela a été le rôle du journaliste de l’équipe. Il a ensuite fallu repérer les acteurs en présence, ainsi que les différentes positions prises dans le débat par ces mêmes acteurs, pour ensuite tenter d’identifier les liens entre les arguments mobilisés par ces derniers. Mais l’étude d’une controverse ne s’arrête pas là ; l’aspect juridique de la question a été traitée par l’un des membres de l’équipe dans une page à part. </p>
 
-    <p>Le travail effectué sur le revenu de base nous a permis de nous rendre compte de la la complexité d’un débat. L’instauration d’un revenu de base n’a en effet pas qu’un impact économique: il s’agit d’un projet de société tant les conséquences dans divers domaines seraient nombreuses. C’est une proposition qui concernent tous les citoyens et qui bouleversera le mode de vie de chacun d’entre nous.</p>
+    <p> Le travail effectué sur le revenu de base nous a permis de nous rendre compte de la complexité d’un débat. L’instauration d’un revenu de base n’a en effet pas qu’un impact économique : il s’agit d’un projet de société tant les conséquences dans divers domaines seraient nombreuses. C’est une proposition qui concernerait tous les citoyens et qui bouleverserait le mode de vie de chacun d’entre nous, s'il entrait en place. Puisque le travail de cartographie d'une controverse est censé être le plus équilibre et impartial possible, nous vous invitons à explorer notre site pour que vous puissiez développer votre propre opinion sur le sujet. Bonne lecture ! </p>
 	</section>
 
 	<section class="col-xs-12">
-	<h3>  Où en est le débat actuellement ? </h3>
+	<h2>  Où en est le débat actuellement ? </h2>
 	</section>
       <?php 
 
       include 'outils/fcts.php';
 
-      $data_tmp = loadData("https://docs.google.com/spreadsheets/d/1QOUEtVo-ECMLklFv4O5iQAgw_yu3TA_qtK3Gm78cZjM/pub?gid=1434001928&single=true&output=csv");
+      $data_tmp = loadData("data/graph_arbre_debat.csv");
  
  
       foreach ($data_tmp as $line) { 
@@ -87,16 +87,10 @@
               $width = 12.0/$nb_elmt;
               $width = floor($width);
 
-              $width_centerer = 0.5*(12-$width*$nb_elmt)/12;
+              $width_centerer = (12-$width*$nb_elmt)/12;
+              $width_centerer = $width_centerer/($nb_elmt-1);
 
-              if($width_centerer>0)
-              {
-                ?>
-
-                <div class="col-xs-1" style="width:<?php echo ($width_centerer*100)."%";?>;"></div>
-
-                <?php
-              }
+              
 
 
               for ($i=5; $i+2 < count($line) && $line[$i+2]!=""; $i+=3) { 
@@ -105,7 +99,7 @@
 
 
 
-              <div class="col-xs-<?php echo  $width; ?> graph_big_parts">
+              <div class="col-xs-<?php echo  $width; ?> graph_big_parts" style="width:<?php echo  (100/$nb_elmt); ?>%;">
                 <div class="col-xs-12 vertical-line"></div>
                 <div class="col-xs-12 titre-debat" style="background-color: <?php echo $line[$i+1]; ?> ;" <?php
 
@@ -114,8 +108,9 @@
                ?> > <span><?php echo $line[$i]; ?></span> </div>
               </div>
 
-                <?php
 
+              <?php
+ 
               }
               ?>
 
@@ -142,33 +137,23 @@
                     <h3 class="titre-debat-societe" style="background-color: <?php echo $line[4]; ?> ;"> <?php echo $line[3]; ?> </h3>
                   </div>
 
-                  <div class="col-xs-12" style="text-align:justify;">
-		
-		<p> <?php echo $line[5];?> </p>
-		
-<?php
-              for ($i=6; $i+1 < count($line) && $line[$i+1]!=""; $i+=2) { 
-
-                ?>
-		<p> <b> <?php echo $line[$i];?> : </b> <?php echo $line[$i+1];?> </p>
-<?php 
-}
-?>
+                  <div class="col-xs-12" style="text-align:justify;"> 
+		                <p> <?php echo $line[5];?> </p> 
+                    <?php for ($i=6; $i+1 < count($line) && $line[$i+1]!=""; $i+=2) {  ?> 
+                      <p> <b> <?php echo $line[$i];?> : </b> <?php echo $line[$i+1];?> </p>  
+                    <?php   }  ?>
                   </div>
 
               </div>
 
               <?php
           }
-      } 
-       
+      } ?>
 
-      ?>
-
+	<div class="col-xs-12" style="height:250px;"></div>
 
        <!-- footer -->
-       <?php include("footer.php"); ?>
-
+       <?php include("footer.php"); ?> 
 
   </div><!-- /.container -->
 
@@ -177,7 +162,7 @@
     <script type='text/javascript'  src="js/jquery-1.12.3.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>   
-
+    <!-- script premettant la navigation dans l'arbre -->
     <script src="js/debats.js"></script>   
 
     <script>
