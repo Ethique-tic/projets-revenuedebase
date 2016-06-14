@@ -19,7 +19,7 @@ switch ($page) {
     break;
 
   case Juridique:
-    $page_active = Juridiqueri;
+    $page_active = Juridique;
     break;
   
 }
@@ -38,7 +38,7 @@ switch ($page) {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.php">ETIC 16 - G12</a>
+      <a class="navbar-brand" href="index.php"><small>ETIC G12</small></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -46,10 +46,10 @@ switch ($page) {
 
      <ul class="nav navbar-nav">
         <li <?php if ($page_active == acceuil) {?> class="active" ><a href="#"> <?php } else { ?> ><a href="index.php">  <?php } ?> Accueil</a></li>
-        <li <?php if ($page_active == debates) {?> class="active" ><a href="#"> <?php } else { ?> ><a href="debats.php"> <?php } ?> Controverse Actuelle </a></li>
-        <li <?php if ($page_active == timeline) {?> class="active" ><a href="#"> <?php } else { ?> ><a href="timeline.php"> <?php } ?> Historique </a></li>
-        <li <?php if ($page_active == Juridique) {?> class="active" ><a href="#"> <?php } else { ?> ><a href="juridique.php"> <?php } ?> Aspect juridique </a></li>
-        <li <?php if ($page_active == us) {?> class="active" ><a href="#"> <?php } else { ?> ><a href="us.php"> <?php } ?> Qui sommes-nous ? </a></li>
+        <li <?php if ($page_active == debates) {?> class="active" ><a href="#"> <?php } else { ?> ><a href="debats.php"> <?php } ?> Le débat </a></li>
+        <li <?php if ($page_active == timeline) {?> class="active" ><a href="#"> <?php } else { ?> ><a href="timeline.php"> <?php } ?> L'histoire </a></li>
+        <li <?php if ($page_active == Juridique) {?> class="active" ><a href="#"> <?php } else { ?> ><a href="juridique.php"> <?php } ?> L'aspect juridique </a></li>
+        <li <?php if ($page_active == us) {?> class="active" ><a href="#"> <?php } else { ?> ><a href="us.php"> <?php } ?> Qui sommes nous ? </a></li>
       </ul>
 
     </div><!--/.nav-collapse -->
@@ -59,5 +59,5 @@ switch ($page) {
 
 
 <section class="page-header" >
-    <h2 style="font-size:20px;"  >Un revenu de base pour tous comme solution au chômage de masse ?</h2>
+    <h1 style="font-size:20px;"  >Un revenu de base pour tous comme solution au chômage de masse ?</h1>
 </section>
