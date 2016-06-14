@@ -3,14 +3,12 @@
 function timeline(data,div_timeline)
 {
 	this.data = new Array();
-	this.div_timeline = div_timeline;
-
+	this.div_timeline = div_timeline; 
 	this.div_timeline.innerHTML = 
-           '<div id="timeline-scroll-hider" ></div> ' 
-      /*  +	'<div id="timeline-big-separator"  class="hidden-xs"></div>' */
+          '<div id="timeline-scroll-hider" ></div> '  
         + '<div id="timeline-frise-selector-left"></div>'  
         + '<div id="timeline-frise">    '
-        +    '<div id="timeline-img" > '  
+        +   '<div id="timeline-img" > '  
         +	'</div>'
         + '</div>  ' 
         + '</div>  ' 
@@ -29,8 +27,7 @@ function timeline(data,div_timeline)
         +		'<div id="timeline-carto-x-axis"></div>'
         +		'<div id="timeline-carto-y-axis"></div>'
         +   '</div>'
-        + '</div>'
-        ;
+        + '</div>';
 
 	this.frise = $(div_timeline).children("#timeline-frise")[0]; 
 	this.infos_div = $(div_timeline).children("#timeline-infos")[0];
@@ -38,9 +35,8 @@ function timeline(data,div_timeline)
 	this.infos_div_texte = $(this.infos_div).children("#timeline-infos-text")[0];
 	this.infos_div_carto = $(this.infos_div).children("#timeline-infos-carto")[0];
 
- 
 	var this_out = this;
-	/*console.log(this.frise);*/
+
 	$(this.frise).scroll(
 	function()
 	{
@@ -64,11 +60,19 @@ function timeline(data,div_timeline)
 	    +   '</div>'
 	    +'</div>'
 	    +'<div class="timeline-frise-evnt-tri"> </div>'
-	    +'<img class="timeline-frise-evnt" src="'+this.img_enable+'"/>'
-	    ;
+	    +'<img class="timeline-frise-evnt" src="'+this.img_enable+'"/>';
 	    
-	    this.img_photo = $(this.div_frise).children("img")[0];
-	    //console.log(this.img_photo);
+	    this.img_photo = $(this.div_frise).children("img")[0]; 
+
+	    this.div_dot = document.createElement("img"); 
+	    this.div_dot.classList.add("timeline-carto-dot");
+	    this.div_dot.style.left = (parseInt(data[3]))+"%";
+	    this.div_dot.style.top = (parseInt(data[4]))+"%"; 
+
+	    this.div_dot_txt = document.createElement("img"); 
+	    this.div_dot.classList.add("timeline-carto-dot-text");
+	    this.div_dot_txt.style.left = (parseInt(data[3]))+"%";
+	    this.div_dot_txt.style.top = (parseInt(data[4]))+"%"; 
 
 	    this.getTitleWithDate = function()
 	    {
@@ -81,15 +85,6 @@ function timeline(data,div_timeline)
 			return parseInt(this.date);
 		}
 
-	    this.div_dot = document.createElement("img"); 
-	    this.div_dot.classList.add("timeline-carto-dot");
-	    this.div_dot.style.left = (parseInt(data[3]))+"%";
-	    this.div_dot.style.top = (parseInt(data[4]))+"%"; 
-
-	    this.div_dot_txt = document.createElement("img"); 
-	    this.div_dot.classList.add("timeline-carto-dot-text");
-	    this.div_dot_txt.style.left = (parseInt(data[3]))+"%";
-	    this.div_dot_txt.style.top = (parseInt(data[4]))+"%"; 
 
 	    this.div = function()
 	    {
@@ -109,22 +104,18 @@ function timeline(data,div_timeline)
 	    this.getText= function()
 	    {
 	    	return this.texte;
-	    }
-
-	    //this.move(parseInt(data[0]));
+	    } 
 
 	    this.enableDot = function()
-	    {
-	    	//this.div_dot.style.backgroundColor = "#D18C00";
-	    	/*this.div_dot.style.border = "3px solid #8BC5BF";*/
+	    { 
 	    	this.div_dot.src= this.img_enable;
+	    	this.div_dot.style.zIndex= "1";
 	    	this.img_photo.src= this.img_enable;
 	    }
 
 	    this.disableDot = function()
-	    {
-	    	//this.div_dot.style.backgroundColor = "#AAAAAA";
-	    	/*this.div_dot.style.border = "3px solid #555555";*/
+	    { 
+	    	this.div_dot.style.zIndex= "0";
 	    	this.div_dot.src= this.img_disable;
 	    	this.img_photo.src= this.img_disable;
 	    }
@@ -141,8 +132,7 @@ function timeline(data,div_timeline)
 	}
 
 	this.setData = function(data)
-	{
-		//var tmp = data.split(/\n\r|\r|\n|\\r\\n/); 
+	{ 
 		console.log(data);
 		for (var i = data.length - 1; i >= 0; i--) {
 			if(data[i].length>0){
@@ -155,14 +145,11 @@ function timeline(data,div_timeline)
 					function(n)
 					{ 	   
 						this_out.centerViewOnCloser(n); 
-					}
-					);
+					});
 			}
 		}
 
-		this.data.sort(
-                    function(a,b)
-			{ 
+		this.data.sort( function(a,b) { 
 				return a.getDate() - b.getDate();	
 			});
 
@@ -170,14 +157,13 @@ function timeline(data,div_timeline)
 		for (var i =  0; i < this.data.length; i++) {
 			pos+=200;
 			var elemt = this.data[i].move(pos); 
-		}
-console.log($(this.frise).children("#timeline-img")[0].offsetHeight);
-		$(this.frise).children("#timeline-img")[0].style.height = (pos+1500)+"px";
-console.log($(this.frise).children("#timeline-img")[0].offsetHeight);
+		} 
+		$(this.frise).children("#timeline-img")[0].style.height = (pos+1500)+"px"; 
  
 	}
 
 	this.closerView = null;
+
 	this.userIsScrolling = function()
 	{  
 		if(this.scrollTimeout != null) clearTimeout(this.scrollTimeout);
@@ -188,55 +174,21 @@ console.log($(this.frise).children("#timeline-img")[0].offsetHeight);
 			50);
 
 		var min_delta = 1000000;
-		var closer = null;
-		//var offsetView = this.frise.scrollTop + $(this.frise).height()/2;
+		var closer = null; 
 		var offsetView = this.frise.scrollTop + 70;
 
 		for (var i = this.data.length - 1; i >= 0; i--) {
 			var elemt = this.data[i].div(); 
-			var delta_tmp = Math.abs(elemt.offsetTop - offsetView);
-			/*console.log(i+ "=>" +offsetView+" "+elemt.offsetTop+" "+delta_tmp);
-			console.log(elemt);*/
+			var delta_tmp = Math.abs(elemt.offsetTop - offsetView); 
 			if(delta_tmp < min_delta)
 			{
 				min_delta = delta_tmp;
 				closer = this.data[i];
 			}
-		}
+		} 
 
-		/*console.log("a");*/
 		if(closer != null) this.closerView = closer;
-		/*console.log(this.closerView);*/
-	}
 
-
-	this.scrolled = function() {
-		/*
-	  	if ((this_out.infos_div_texte.offsetHeight 
-	  	+ this_out.infos_div_texte.scrollTop 
-	  		>= this_out.infos_div_texte.scrollHeight) 
-	  	|| (this_out.infos_div_texte.scrollHeight == this_out.infos_div_texte.offsetHeight))
-		{
-	    	console.log("end"); 
-			$(this_out.infos_div).children("#timeline-infos-text-bottom-shadow")[0].style.visibility = "hidden";
-
-	  	}
-	  	else
-	  	{
-			$(this_out.infos_div).children("#timeline-infos-text-bottom-shadow")[0].style.visibility = "visible"; 
-	  	}
-
-		if(this_out.infos_div_texte.scrollTop == 0)
-		{
-			console.log("top");
-			$(this_out.infos_div).children("#timeline-infos-text-top-shadow")[0].style.visibility = "hidden";  
-		}
-		else
-		{
-			$(this_out.infos_div).children("#timeline-infos-text-top-shadow")[0].style.visibility = "visible"; 
-		}
- 
-*/
 	}
 
 	this.showContentOf = function(data_elmt)
@@ -250,8 +202,6 @@ console.log($(this.frise).children("#timeline-img")[0].offsetHeight);
 	    data_elmt.enableDot();
 		this_out.oldCloserView =this_out.closerView;
 	    this_out.closerView = data_elmt;
-
-		this.scrolled();
 	}
 
 	this.scrollingAutoTimer = null;
@@ -265,10 +215,10 @@ console.log($(this.frise).children("#timeline-img")[0].offsetHeight);
 		}
 
 	    this.scrollingAutoTimer = null;
-		/*console.log("a");*/
+
 		if( (this.closerView != null || this.forcedView != null))
 		{  
-			//var offsetView = this.frise.scrollTop + $(this.frise).height()/2 ; 
+
 			var offsetView = this.frise.scrollTop +70;
 
 	        if( this.forcedView != null)
@@ -276,7 +226,6 @@ console.log($(this.frise).children("#timeline-img")[0].offsetHeight);
 	        else
 	        	var ecart = (this.closerView.div().offsetTop+this.closerView.div().offsetHeight/2) - offsetView;
 	        
-	        /*console.log(ecart);*/
 	        if(Math.abs(ecart) > 250)
 	        {
 		        this.frise.scrollTop+= ecart*0.05;
@@ -305,7 +254,6 @@ console.log($(this.frise).children("#timeline-img")[0].offsetHeight);
 						this.showContentOf(this.forcedView);
 					}
 					this.oldCloserView = this.forcedView;
-					//this.closerView = null;
 	        	}
 	        	else
 	        	{
@@ -315,7 +263,6 @@ console.log($(this.frise).children("#timeline-img")[0].offsetHeight);
 						this.showContentOf(this.closerView);
 					}
 					this.oldCloserView = this.closerView;
-					//this.closerView = null;
 				}
 	        }
 		}
@@ -324,8 +271,6 @@ console.log($(this.frise).children("#timeline-img")[0].offsetHeight);
 	this.centerViewOnCloser = function(view)
 	{ 
 		if(typeof view != "undefined") this.closerView =view; 
-		/*console.log("b");*/
-		/*console.log(this.closerView);*/
 
 		if(this.scrollingAutoTimer != null) return;
 		this.scrollingAutoTimer = setTimeout(
@@ -333,51 +278,29 @@ console.log($(this.frise).children("#timeline-img")[0].offsetHeight);
 				this_out.scrollAuto(true);
 			}, 
 			20);
-	} 
-
-
-	 
-
-	this.isBreakpoint = function( alias ) {
-	    return $('.device-' + alias).is(':visible');
-	}
-
+	}  
 
 	this.updateView = function () {   
-		this_out.resizeForDesktop(); 
-		this_out.centerViewOnCloser();  
-	} 
-
-
-	this.resizeForDesktop = function()
-	{   
- 		//general
 		var height = "innerHeight" in window 
                ? window.innerHeight
                : document.documentElement.offsetHeight; 
         this_out.div_timeline.style.height = 0.7*height+"px"; 
-	}
 
-	//this.adaptTimelineSize();
-
+		this_out.centerViewOnCloser();  
+	}   
 
 	this.setData(data);
- 
+ 	this.updateView();  
+ 	if(this.data.length > 0)
+ 	{
+ 		this.closerView = this.data[0];
+ 		this.scrollAuto(true);
+ 	}
 
 	$(window).resize(
 		function()
 		{ 
 			this_out.updateView();
 	    }
-	);
-
-	$(this.infos_div_texte).scroll( this.scrolled );
-	
- 	this.updateView(); 
- 
- 	if(this.data.length > 0)
- 	{
- 		this.closerView = this.data[0];
- 		this.scrollAuto(true);
- 	}
+	); 
 }

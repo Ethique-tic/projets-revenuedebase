@@ -31,26 +31,18 @@
  
 	
 	<section class="col-xs-12" style="text-align:justify;">
-	<h3> L'histoire du revenue de base en France. </h3>
+	<h2> L'histoire du revenue de base en France. </h2>
 	<p>
 	Afin de vous présenter l'histoire du revenu de base en France, nous avons choisi de vous exposer les différents acteurs français qui ont fait vivre cette idée. 
 	</p>
 	</section>
 
        <!-- time line start -->
-       <div id="timeline-widget" class="col-xs-12">
- 
-         
-  
+       <div id="timeline-widget" class="col-xs-12" style="min-width:720px;">  
        </div>
        <!-- time line end -->
-      
-
-
-
 
   </div><!-- /.container -->
-
 
    <!-- footer -->
    <?php include("footer.php"); ?>
@@ -61,26 +53,20 @@
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="js/jquery-1.12.3.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="js/bootstrap.min.js"></script> 
-<script src="js/ResizeSensor.js"></script> 
-<script src="js/timeline.js"></script> 
-<script type="text/javascript"> 
-  frise_div = $("#timeline-widget");
+<script src="js/bootstrap.min.js"></script>  
 
+<!-- script contenant la gestion de la timeline -->
+<script src="js/timeline.js"></script> 
+<!-- mise en place de la timeline -->
+<script type="text/javascript"> 
+  var frise_div = $("#timeline-widget"); 
   <?php 
 
   include 'outils/fcts.php';
 
-  $data_tmp = loadData("https://docs.google.com/spreadsheets/d/1qNfddHEXgC4QFCX1ScKmoVNRTUV75AKHZaZG0OxAae0/pub?gid=1276158443&single=true&output=csv");
+  $data_tmp = loadData("data/timeline_acteurs_fr.csv");
 
-  //echo "/*\n";
-  //print_r($data_tmp);
-  //echo "\n*/";
-
-  $data = "";
-
-  $data = $data." [ ";
-
+  $data = "[ "; 
   foreach ($data_tmp as $line) {
     $data = $data." [ ";
       foreach ($line as $col) {
@@ -88,12 +74,11 @@
       }
     $data = $data." ] ,";
   }
-    $data = $data." ];";
+  $data = $data." ];";
   
-  echo 'var data = '.$data.'';
+  echo 'var data = '.$data;
 
-  ?>
-
+  ?> 
   var frise = new timeline(data,frise_div[0]);
 </script>  
 
