@@ -31,28 +31,28 @@
 
       <div class=".col-xs-12" style="text-align:justify;"> 
 
-<h2> Qui sommes-nous ? </h2>
+          <h2> Qui sommes-nous ? </h2>
 
-    Ce site a été réalisé par des étudiants de première année à Télécom ParisTech, dans le cadre du projet de groupe <b>« Enjeux des technologies de l’information et de la communication »</b>. Notre travail a été encadré par <b>Fabrizio Li Vigni</b>, que nous tenions particulièrement à remercier et qui a toujours poussé notre réflexion plus loin sur la controverse du revenu de base.
+          Ce site a été réalisé par des étudiants de première année à Télécom ParisTech, dans le cadre du projet de groupe <b>« Enjeux des technologies de l’information et de la communication »</b>. Notre travail a été encadré par <b>Fabrizio Li Vigni</b>, que nous tenions particulièrement à remercier et qui a toujours poussé notre réflexion plus loin sur la controverse du revenu de base.
 
-    Nous avons démarré ce projet durant le mois de mars 2016 et l’avons achevé début juin. Celui-ci a été réparti par les sept différents membres de l’équipe. Voici une brève présentation de nous tous:
-<ul>
-<li>Mansour Mohamed, intégrateur web : chargé de réaliser en pratique le site internet regroupant les informations autour de notre sujet sous la forme pensée par le designer.</li>
+          Nous avons démarré ce projet durant le mois de mars 2016 et l’avons achevé début juin. Celui-ci a été réparti par les sept différents membres de l’équipe. Voici une brève présentation de nous tous:
+          <ul>
+            <li>Mansour Mohamed, intégrateur web : chargé de réaliser en pratique le site internet regroupant les informations autour de notre sujet sous la forme pensée par le designer.</li>
 
-<li>Bernoussi Ismail, rôle : présentation 1/2 phrase</li>
+            <li>Bernoussi Ismail, rôle : présentation 1/2 phrase</li>
 
-<li>Brofiga Roméo, rôle: présentation 1/2 phrase</li>
+            <li>Brofiga Roméo, rôle: Elle/il conçoit, en partenariat avec l’intégrateur, et au fil des discussions collectives, une stratégie de visualisation pour faire comprendre la controverse au grand public et donner à voir de manière originale et pertinente l’arbre des débats, la carte des acteurs et la frise chronologique.</li>
 
-<li>Jourdan David, journaliste : chargé de faire une revue de presse, en particulier d’analyser les différents points de vue défendus dans la presse.</li>
+            <li>Jourdan David, journaliste : chargé de faire une revue de presse, en particulier d’analyser les différents points de vue défendus dans la presse.</li>
 
-<li>Labaisse Hugo, explorateur web : chargé d’obtenir un nombre conséquent d’url dans le but de déterminer les différentes opinions et l’importance qu’elles prennent dans le débat.</li>
+            <li>Labaisse Hugo, explorateur web : chargé d’obtenir un nombre conséquent d’url dans le but de déterminer les différentes opinions et l’importance qu’elles prennent dans le débat.</li>
 
-<li>Nait Saada Juba, théoricien et coordinateur: chargé de trouver et d’interpréter les différences entre les rapports remis par les rôles d’enquêtes, de faire dialoguer l’ensemble des rôles et d’expliquer la notion même de controverse.</li>
+            <li>Nait Saada Juba, théoricien et coordinateur: chargé de trouver et d’interpréter les différences entre les rapports remis par les rôles d’enquêtes, de faire dialoguer l’ensemble des rôles et d’expliquer la notion même de controverse.</li>
 
-<li>Spriet Pierre, juriste : présentation 1/2 phrase</li>
-</ul>
-    
-Nous espérons que vous apprécierez visiter notre site et nous vous remercions de votre intérêt pour celui-ci.
+            <li>Spriet Pierre, juriste : chargé de réaliser un dossier qui regroupe le point de vue juridique de cette controverse et son applicabilité.</li>
+          </ul>
+              
+          Nous espérons que vous apprécierez visiter notre site et nous vous remercions de votre intérêt pour celui-ci.
 
       </div>
        <!-- footer -->
@@ -60,8 +60,6 @@ Nous espérons que vous apprécierez visiter notre site et nous vous remercions 
 
 
   </div><!-- /.container -->
-
-
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="js/jquery-1.12.3.min.js"></script>
