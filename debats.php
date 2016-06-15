@@ -10,8 +10,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-theme.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
-    <link href="css/graph.css" rel="stylesheet">
-    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/graph.css" rel="stylesheet"> 
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -139,8 +138,11 @@
 
                   <div class="col-xs-12" style="text-align:justify;"> 
 		                <p> <?php echo $line[5];?> </p> 
-                    <?php for ($i=6; $i+1 < count($line) && $line[$i+1]!=""; $i+=2) {  ?> 
-                      <p> <b> <?php echo $line[$i];?> : </b> <?php echo $line[$i+1];?> </p>  
+                    <?php for ($i=6; $i+2 < count($line) && $line[$i+2]!=""; $i+=3) {  ?> 
+                      <section class="citation">
+                      <img class="citation-img" src="<?php echo $line[$i+1];?>" alt=""/>
+                      <p><b> <?php echo $line[$i];?> : </b> <?php echo $line[$i+2];?> </p>  
+                      </section>
                     <?php   }  ?>
                   </div>
 
