@@ -1,8 +1,5 @@
 
 
- //var arbre = $(".arbre");
- //arbre.text(arbre.data("file"));
-
 //***** Liste chainée ****//
 
 function Noeud(texte, id, parent,css_classe,color) { 
@@ -25,12 +22,12 @@ function Noeud(texte, id, parent,css_classe,color) {
   	+'</div>'
   	+'</div>'
   	; ~~
-  	/*this.div.style.border = "1px solid black";*/ 
+
 	$(this.div).children()[0].classList.add(css_classe);
 
 	this.setColor = function(color)
 	{ 
-		/*$(this.div).children(".arbre_elmt")[0].style.background = "transparent radial-gradient(white, "+color+") repeat scroll 0% 0%"; */
+
 		$(this.div).children(".arbre_elmt")[0].style.background = "transparent radial-gradient(white 1%, "+color+" ) repeat scroll 0% 0%"; 
 	}
 
@@ -66,7 +63,7 @@ function Noeud(texte, id, parent,css_classe,color) {
 	this.div.style.display = "none";
 	} 
 
-	var duration = 0;//300;
+	var duration = 0;
 	this.setSize= function (height,width)
 	{ 
 		$(this.div).animate({ 
@@ -149,7 +146,7 @@ function Noeud(texte, id, parent,css_classe,color) {
 		return '<h3>'+this.title+'</h3>'+'<hr id="popup-sep">'
 				+'<div>'+this.texte+'</div>';
 	}
-   			/*console.log("init");*/
+
    	this.showInfosFct = null;
 
    	this.setShowInfosFct = function(fct)
@@ -182,7 +179,7 @@ function buildArbre(data,css_classe,div)
 		btn_close_popup.textContent = "close";
 		btn_close_popup.onclick = function()
 		{
-	   				/*console.log("fed");*/
+
 			div.removeChild(popup);
 		} 
 		popup.appendChild(textPopup);
@@ -264,7 +261,6 @@ function fillDiv(div,centre)
 
 	$(div).empty();
 
-	//element principal
     noeud = centre;
 	y = height*0.5-href*0.5; x = width*0.5-href*0.5;
 	div.appendChild(noeud.getDiv());
@@ -277,7 +273,6 @@ function fillDiv(div,centre)
 		}
 		);
 
-	//sous elements 
 	var theta = 0;
 	var pas_theta = 2*Math.PI/centre.getSuccesseurNb();
 	var h_tmp =href/centre.getSuccesseurNb();
@@ -341,7 +336,6 @@ function ArbreData(id_div,racine_arbre,centre) {
 	this.centre = centre;
 }
 
-//init  
 function createArbre(id_div,data,css_classe)
 { 
 	var arbre = $("#"+id_div);
@@ -353,12 +347,7 @@ function createArbre(id_div,data,css_classe)
 	arbre.textContent = "";
 
 	var racine_arbre = buildArbre(data,css_classe,arbre);
-/*
-	new ResizeSensor(arbre, function() {
-	    //fillDiv(arbre,racine_arbre); 
 
-	});
-	*/
 	fillDiv(arbre,racine_arbre); 
 
 
@@ -370,7 +359,6 @@ function adaptTimelineSize()
 		var height = "innerHeight" in window 
                ? window.innerHeight
                : document.documentElement.offsetHeight; 
-        /*console.log(height);*/
 
 		$("#arbre")[0].style.height = (height*0.7)+"px";
 }
