@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>ETIC 16 - Accueil</title>
+	<title>ETIC 16 - Qui sommes-nous ? </title>
 
 	<!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -41,7 +41,7 @@
 
             <li>Bernoussi Ismail, rôle : présentation 1/2 phrase</li>
 
-            <li>Brofiga Roméo, rôle: Elle/il conçoit, en partenariat avec l’intégrateur, et au fil des discussions collectives, une stratégie de visualisation pour faire comprendre la controverse au grand public et donner à voir de manière originale et pertinente l’arbre des débats, la carte des acteurs et la frise chronologique.</li>
+            <li>Brofiga Roméo, designer: Elle/il conçoit, en partenariat avec l’intégrateur, et au fil des discussions collectives, une stratégie de visualisation pour faire comprendre la controverse au grand public et donner à voir de manière originale et pertinente l’arbre des débats, la carte des acteurs et la frise chronologique.</li>
 
             <li>Jourdan David, journaliste : chargé de faire une revue de presse, en particulier d’analyser les différents points de vue défendus dans la presse.</li>
 
