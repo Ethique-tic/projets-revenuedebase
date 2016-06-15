@@ -33,7 +33,10 @@
 
           <h2> Qui sommes-nous ? </h2>
 
+	<img src="img/photo_grp.jpg" alt="" style="float:right;padding:20px;max-width:100%;" />
+
           Ce site a été réalisé par des étudiants de première année à Télécom ParisTech, dans le cadre du projet de groupe <b>« Enjeux des technologies de l’information et de la communication »</b>. Notre travail a été encadré par <b>Fabrizio Li Vigni</b>, que nous tenions particulièrement à remercier et qui a toujours poussé notre réflexion plus loin sur la controverse du revenu de base.
+
 
           Nous avons démarré ce projet durant le mois de mars 2016 et l’avons achevé début juin. Celui-ci a été réparti par les sept différents membres de l’équipe. Voici une brève présentation de nous tous:
           <ul>
