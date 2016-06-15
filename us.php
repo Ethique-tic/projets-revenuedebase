@@ -42,9 +42,9 @@
           <ul>
             <li>Mansour Mohamed, intégrateur web : chargé de réaliser en pratique le site internet regroupant les informations autour de notre sujet sous la forme pensée par le designer.</li>
 
-            <li>Bernoussi Ismail, rôle : présentation 1/2 phrase</li>
+            <li>Bernoussi Ismail, architecte : chargé de repérer les différents acteurs au sein de la problématique. Cela s'accompagne par une réflexion pour rendre compte au mieux de la controverse sur le site WEB.</li>
 
-            <li>Brofiga Roméo, designer: Elle/il conçoit, en partenariat avec l’intégrateur, et au fil des discussions collectives, une stratégie de visualisation pour faire comprendre la controverse au grand public et donner à voir de manière originale et pertinente l’arbre des débats, la carte des acteurs et la frise chronologique.</li>
+            <li>Brofiga Roméo, designer: chargé de concevoir, en partenariat avec l’intégrateur, et au fil des discussions collectives, une stratégie de visualisation pour faire comprendre la controverse au grand public et donner à voir de manière originale et pertinente l’arbre des débats, la carte des acteurs et la frise chronologique.</li>
 
             <li>Jourdan David, journaliste : chargé de faire une revue de presse, en particulier d’analyser les différents points de vue défendus dans la presse.</li>
 
