@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ETIC 16 - Timeline</title>
+  <title>ETIC 16 - L'historique </title>
 
   <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -31,9 +31,9 @@
  
 	
 	<section class="col-xs-12" style="text-align:justify;">
-	<h2> L'histoire du revenue de base en France. </h2>
+	<h2> L'histoire du revenu de base en France. </h2>
 	<p>
-	Afin de vous présenter l'histoire du revenu de base en France, nous avons choisi de vous exposer les différents acteurs français qui ont fait vivre cette idée. 
+	Afin de vous présenter l'histoire du revenu de base en France, nous avons choisi de vous exposer les différents acteurs français qui ont fait vivre cette idée. Revivez donc l’histoire du revenu de base à travers notre frise chronologique dynamique, qui montre à chacune des apparitions des grands acteurs leur position dans le débat, en fonction de s’ils espèrent un grand ou faible changement avec le revenu de base, et selon leurs idées politiques.
 	</p>
 	</section>
 
