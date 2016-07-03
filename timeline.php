@@ -33,7 +33,7 @@
 	<section class="col-xs-12" style="text-align:justify;">
 	<h2> L'histoire du revenu de base en France. </h2>
 	<p>
-	Afin de vous présenter l'histoire du revenu de base en France, nous avons choisi de vous exposer les différents acteurs français qui ont fait vivre cette idée. Revivez donc l’histoire du revenu de base à travers notre frise chronologique dynamique, qui montre à chacune des apparitions des grands acteurs leur position dans le débat, en fonction de s’ils espèrent un grand ou faible changement avec le revenu de base, et selon leurs idées politiques.
+	Afin de vous présenter l'histoire du revenu de base en France, nous avons choisi d’exposer les différents acteurs français qui ont fait vivre cette idée. Revivez donc l’histoire du revenu de base à travers notre frise chronologique dynamique. Les acteurs sont présentés sur deux axes, un qui distingue les positions entre droite et gauche, et un autre qui distingue les propositions selon leur plus ou moins grand pouvoir de changement sociétal.
 	</p>
 	</section>
 
