@@ -33,12 +33,16 @@
 
 	<section class="col-xs-12" style="text-align:justify;">
 	<h2>  Qu’est-ce qu’une controverse ? </h2>
-
-   <p>Une controverse est une discussion argumentée, engendrée par l'expression d'une différence d'opinion ou d'une critique quant à un problème, un phénomène ou un état de choses. Tommaso Venturini affirme qu’une controverse est en fait une « incertitude partagée ». En d’autres termes, la seule certitude dont l’on dispose, quand on étudie une controverse, c’est qu’il existe, sur un sujet donné, un désaccord et des positions souvent irréconciliables. Ce qu’il importe en conséquence d’étudier et de chercher à préciser, c’est la manière dont les acteurs interagissent et s’opposent pour construire cette incertitude fondamentale et la polémique qui en découle.</p>
-
-   <p> Dans le cadre de la controverse du revenu de base, il a fallu dans un premier temps collecter le plus grand nombre d'articles de journal ou de blog, qui prenaient partie au débat : cela a été le rôle du journaliste de l’équipe. Il a ensuite fallu repérer les acteurs en présence, ainsi que les différentes positions prises dans le débat par ces mêmes acteurs, pour ensuite tenter d’identifier les liens entre les arguments mobilisés par ces derniers. Mais l’étude d’une controverse ne s’arrête pas là ; l’aspect juridique de la question a été traitée par l’un des membres de l’équipe dans une page à part. </p>
-
-    <p> Le travail effectué sur le revenu de base nous a permis de nous rendre compte de la complexité d’un débat. L’instauration d’un revenu de base n’a en effet pas qu’un impact économique : il s’agit d’un projet de société tant les conséquences dans divers domaines seraient nombreuses. C’est une proposition qui concernerait tous les citoyens et qui bouleverserait le mode de vie de chacun d’entre nous, s'il entrait en place. Puisque le travail de cartographie d'une controverse est censé être le plus équilibre et impartial possible, nous vous invitons à explorer notre site pour que vous puissiez développer votre propre opinion sur le sujet. Bonne lecture ! </p>
+	<p>
+   « Une controverse est une discussion argumentée, engendrée par l'expression d'une différence d'opinion ou d'une critique quant à un problème, un phénomène ou un état de choses » (Wikipédia.fr). Tommaso Venturini, du Medialab de Sciences Po, affirme qu’une controverse est une « incertitude partagée ». La sociologie des controverses se penche alors sur l’étude des positions souvent irréconciliables qui voient s’opposer des acteurs hétérogènes autour d’un sujet. Ce qu’il importe en conséquence d’étudier et de chercher à préciser, c’est la manière dont ces acteurs interagissent et s’affrontent pour parvenir, à travers des rapports de force et de polémiques argumentées, à la clôture de la controverse.
+	</p>
+	<p>
+	Dans le cadre de la controverse du revenu de base, il a fallu dans un premier temps effectuer une recherche dans les bases de données de la presse, afin de repérer les positions des acteurs telles qu’elles ont été relayées par des journalistes ou par les acteurs eux-mêmes : cela a été le rôle du journaliste et de l’explorateur web de l’équipe. Il a ensuite fallu cartographier les acteurs en présence, ainsi que leurs positions dans le débat. Mais l’étude d’une controverse ne s’arrête pas là : l’aspect juridique de la question a été traitée par l’un des membres de l’équipe dans une page à part.
+	</p>
+	<p>
+	Le travail effectué sur le revenu de base nous a permis de nous rendre compte de la complexité et des retombées que peut avoir un différend public de caractère intellectuel et politique. En effet, l’instauration d’un revenu de base n’aurait pas qu’un impact économique : une partie de notre arbre de débats ici-bas essaie précisément de restituer certains des changements imaginés d’un revenu universel sur la société. C’est une proposition qui concernerait tous les citoyens et qui bouleverserait le mode de vie de chacun d’entre nous. Puisque le travail de cartographie d’une controverse est censé être le plus équilibré et impartial possible, nous vous invitons à explorer notre site pour que vous puissiez développer votre propre opinion sur le sujet. Bonne lecture !
+	</p>
+	
 	</section>
 
 	<section class="col-xs-12">
